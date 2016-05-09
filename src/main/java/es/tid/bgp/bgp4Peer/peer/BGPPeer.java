@@ -245,6 +245,7 @@ public class BGPPeer {
 		saveTopologyDB.setMultiDomainTEDB(multiTEDB);
 	}
 
+	/*
 	//new function from Andrea
 	public void setWriteMultiAndIntraTEDB(MultiDomainTEDB multiTEDB, Hashtable<Inet4Address,DomainTEDB> intraTEDBs) {
 
@@ -253,8 +254,9 @@ public class BGPPeer {
 		saveTopologyDB.setMultiDomainTEDB(multiTEDB);
 		saveTopologyDB.setIntraTEDBs(intraTEDBs);
 	}
+	 */
 
-	
+
 	public void setReadDomainTEDB(DomainTEDB readDomainTEDB) {
 		//this.readDomainTEDB = readDomainTEDB;
 		this.intraTEDBs.put(readDomainTEDB.getDomainID(), readDomainTEDB);
